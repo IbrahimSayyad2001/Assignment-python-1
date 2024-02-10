@@ -1,0 +1,22 @@
+
+> tx1='rahul is very nice guy'
+> tx2='a guy name is rahul'
+> l1=tx1.split()
+> l1
+['rahul', 'is', 'very', 'nice', 'guy']
+> l2=tx2.split()
+> l2
+['a', 'guy', 'name', 'is', 'rahul']
+> set(l1). union(set(l2))
+{'a', 'guy', 'rahul', 'very', 'name', 'nice', 'is'}
+> k1 = [1,2,3]
+> k1
+[1, 2, 3]
+> k1.__sizeof__()
+72
+> k2 = [1.,2.,3.]
+> k2
+[1.0, 2.0, 3.0]
+> k2.__sizeof__()
+72
+> 
