@@ -1,0 +1,79 @@
+> a1 = {'a','b','c','d'}
+
+> a1
+
+{'d', 'c', 'b', 'a'}
+
+> a2 = {'a','b','e','f'}
+
+> a2
+
+{'f', 'e', 'b', 'a'}
+
+> a1.update(a2)
+
+> a1
+
+{'d', 'e', 'b', 'f', 'c', 'a'}
+
+> a1.difference_update(a2)
+
+> a1
+
+{'d', 'c'}
+
+> a2.difference_update(a1)
+
+> a2
+
+{'f', 'e', 'b', 'a'}
+
+> b1 = {'g','h','i','j'}
+
+> b1
+
+{'i', 'g', 'j', 'h'}
+
+> b2={'i','j','k','l'}
+
+> b2
+
+{'k', 'i', 'j', 'l'}
+
+> b1.intersection_update(b2)
+
+> b1
+
+{'i', 'j'}
+
+> b2
+
+{'k', 'i', 'j', 'l'}
+
+> b2.intersection(b2)
+
+{'k', 'i', 'j', 'l'}
+
+> d1 ={'l','m','n','o'}
+
+> d1
+
+{'o', 'm', 'l', 'n'}
+
+> d2 ={'n','o','p','q'}
+
+> d2
+
+{'o', 'p', 'n', 'q'}
+
+> d1.symmetric_difference_update(d1)
+
+> d1
+
+set()
+
+> d1.symmetric_difference_update(d2)
+
+> d1
+
+{'o', 'p', 'n', 'q'}
