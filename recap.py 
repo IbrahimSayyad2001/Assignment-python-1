@@ -1,4 +1,47 @@
-
+> d = '   devdas   '
+> d.strip()
+'devdas'
+> f = 'aaaibrahimsss'
+> f.strip('as')
+'ibrahim'
+> s= '###replace***'
+> s.strip('#*')
+'replace'
+> s.replace('#','').replace('*','')
+'replace'
+> s.translate({'#'':'','*':''})
+ERROR!
+File "<stdin>", line 1
+    s.translate({'#'':'','*':''})
+                              ^
+SyntaxError: unterminated string literal (detected at line 1)
+> s.translate({'#':'','*':''})
+'###replace***'
+> s = '###replace***'
+> s.translate(s.maketrans({'#':'','*':''}))
+'replace'
+> t = '1111111100000000111111'
+> t
+'1111111100000000111111'
+> t.translate(t.maketrans({'1':'0','0':'1'}))
+'0000000011111111000000'
+>  c= 'manager will call me on 7558588620'
+c= 'manager will call me on 7558588620'
+> c= 'manager will call me on 7558588620'
+> c[-10:]
+'7558588620'
+> c.split()
+['manager', 'will', 'call', 'me', 'on', '7558588620']
+> c.split(5)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: must be str or None,not int
+> c.split(-1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: must be str or None, not int
+> c.split()[-1]
+'7558588620'
 > tx1='rahul is very nice guy'
 > tx2='a guy name is rahul'
 > l1=tx1.split()
