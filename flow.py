@@ -25,3 +25,11 @@ elif salary>=30000:
 else :
     print (' intern employee ')
 __________________________________________
+
+#Define number is even or odd 
+
+num= int(input('Enter the number:'))
+if num %2==0:
+    print('The number is Even number ')
+else: 
+    print ('The number is Odd number ')
