@@ -9,4 +9,19 @@ elif marks>= 40:
             print('you just passed')
 else :
                 print ('you have failed ')
-------------------------------------------
+__________________________________________
+
+# wap to identify employees according to their salaries
+
+salary=int(input('Enter salary'))
+if salary >=200000: 
+    print(' manager')
+elif salary>=150000:
+    print(' senior employee')
+elif salary>=100000:
+    print (' junior employee')
+elif salary>=30000:
+    print ('fresher employee ')
+else :
+    print (' intern employee ')
+__________________________________________
