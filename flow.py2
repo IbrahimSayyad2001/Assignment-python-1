@@ -1,0 +1,35 @@
+a = int(input("Enter side a: "))
+b = int(input("Enter side b: "))
+c = int(input("Enter side c: "))
+if a == b == c:
+    print("Equilateral triangle")
+elif a == b or b == c or c == a:
+    print("Isosceles triangle")
+else:
+    print("Scalene triangle")
+__________________________________________
+
+#wap to identify seasons 
+
+month = int(input("Enter month (1-12): "))
+if month in (2, 3, 4, 5):
+    print("summer")
+elif month in (6, 7, 8, 9):
+    print("Rainy")
+else:
+    print("Winter")
+__________________________________________
+
+# wap to define ticket price
+
+age = int(input("Enter your age: "))
+if age < 5:
+   print('free ticket ')
+elif age < 10:
+   print(' ticket_price = 40')
+elif age <18 :
+   print( 'ticket_price = 60')
+else:
+   print('ticket_price = 90')
+__________________________________________
+
