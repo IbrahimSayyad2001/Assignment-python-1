@@ -33,3 +33,16 @@ if num %2==0:
     print('The number is Even number ')
 else: 
     print ('The number is Odd number ')
+
+__________________________________________
+
+# wap to define number is positive or negative 
+nm=int(input('Enter the number'))
+if nm>0:
+    print('Number is positive ')
+elif nm<0:
+    print('Number is negative ')
+else :
+    print('Number is zero')
+
+_________________________________________
