@@ -46,3 +46,25 @@ else :
     print('Number is zero')
 
 _________________________________________
+
+# wap to identify the character is vowel or consonant
+
+char=input('Enter a character :').lower()
+if char in 'aeiou':
+    print('Vowel')
+else :
+    print('Consonant')
+__________________________________________
+#Define the function to check the colour of the traffic signal
+
+traffic_colour = input('Enter the colour of the traffic signal: ')
+
+if traffic_colour == 'red':
+    print('Stop the vehicle')
+elif traffic_colour == 'yellow':
+    print('Lower the speed of vehicle to stop')
+elif traffic_colour == 'green':
+    print('Vehicle Keep Going')
+else:
+    print('Invalid colour')
+    
