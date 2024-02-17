@@ -136,6 +136,7 @@ a(c=3,b=4)
 ______________________________________
 
 #variable length args
+#1positional var len arg 
 
 # wap to to display  numbers 
 def a(*b):
