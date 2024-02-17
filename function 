@@ -1,0 +1,167 @@
+# function with return:
+
+def operation(a,b):
+    return(a*b)
+result= operation(4,5)
+print(result)
+____________________________
+ # wap to identify maximum number
+def num(x,y):
+    return max(x,y)
+result=max(13,17)
+print('maximum number is :', result)
+_____________________________
+# wap python program maximum number, multiplication and +100
+def num(x,y):
+    return max(x,y),x*y,x+100
+result = num(3,4)
+print( result
+_____________________________
+# wap python program maximum number, multiplication and +100
+def num(n):
+    return[i**2 for i in range(n,n+1) ]
+result = num(4)
+print( result)
+_____________________________
+# wap to reverse the character 
+def ch(d):
+    return d[::-1]
+result =ch('ibrahim')
+print( result)
+_______________________________
+#positional argument 
+
+ # wap to for area of rectangle 
+def a(length,width):
+    return (length *width)
+area=a(20,30)
+print( area)
+______________________________
+
+#wap to add character
+ def cha(a,b):
+    return a +b
+result = cha('Ibrahim','Sayyad')
+print(result )
+________________________________
+
+#wap to display birthdate 
+ def cha(date,month,year):
+    print('date:',date )
+    print('month:',month)
+    print('yeae :',year)
+cha(12,'feb',2024)
+_________________________________
+
+ #write a program to name bikes 
+def cha(bike1, bike2, bike3):
+    print('yamaha:',bike1)
+    print('kawasaki:',bike2)
+    print('Benelli:',bike3)
+cha('R15','ninja','600i')
+___________________________________
+#keyword Argument
+
+ #write a program to name bikes 
+def cha(bike1, bike2, bike3):
+    print('yamaha:',bike1)
+    print('kawasaki:',bike2)
+    print('Benelli:',bike3)
+cha(bike2='ninja',bike3='600i',bike1='R15')
+____________________________________
+ #write a program for students information 
+def student_info(student1, student2, student3):
+    print('rahul:', student1)
+    print('ramesh:', student2)
+    print('suresh:', student3)
+student_info(student2='(Roll no:5,Grade:A)' , student3='(Roll no:6,Grade:B)', student1='(Roll no:4,Grade:C)')
+____________________________________
+
+#wap to display full name with age 
+def full_name(fs,ls,ag):
+    print('first_name',fs)
+    print ('last_name',ls)
+    print('Age',ag)
+full_name(ls='sayyad',fs='ibrahim',ag=22)
+________________________________________
+
+#wap to display full name with age 
+def num(s,l):
+    print('addition:',s+l)
+    print ('substraction:',s-l)
+num(l=20,s=25)
+__________________________________________#wap to display area of rectangle
+def rect(l,w):
+    print('area of rectangle:',l*w )
+rect(l=3,w=5)
+_________________________________________
+#default argument
+
+#wap to display bank account 
+def account(name='guest',branch='HDFC:'):
+    print('Name is :',name)
+    print('Branch is :', branch)
+account(branch='karve_naka',name='ibrahim')
+_______________________________________
+
+#wap to display bank account 
+def account(name='guest',branch='HDFC:'):
+    print('Name is :',name)
+    print('Branch is :', branch)
+account(branch='karve_naka',name='ibrahim')
+print('_______________')
+account ('ibrahim')
+print('_______________')
+account(branch='karve_naka')
+______________________________________
+
+ # wap to for area of triangle 
+def a(length,width):
+    print(' Length of triangle ',length )
+    print ('Width of triangle', width )
+    print('Area of triangle ',length*width)
+a(3,4)
+print('--------------')
+a(width=6,length=4)
+___________________________________
+
+# wap to to display  numbers 
+def a(b,c):
+    print('Addition of numbers:',b+c)
+    print('substraction of numbers:',b-c)
+   
+a(15,12)
+print('-----------------')
+a(c=3,b=4)
+______________________________________
+
+#variable length args
+
+# wap to to display  numbers 
+def a(*b):
+    print(b)
+   
+a(15,12)
+print('-----------------')
+a()
+a(22,'ibrahim',2001)
+______________________________
+
+# wap to to display  numbers 
+def a(*b):
+    print(sum(b))
+   
+a(15,12)
+print('-----------------')
+a()
+a(22,2001)
+______________________________
+ # wap to to display  numbers 
+def a(*b):
+    print(len(b))
+   
+a(15,12,45,12)
+print('-----------------')
+a('ibrahim')
+a(22,2001)
+__________________________________
