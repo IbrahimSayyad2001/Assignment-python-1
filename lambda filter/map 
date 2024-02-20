@@ -1,0 +1,26 @@
+ #wap to display  
+a=[10,20,30,40,50,5,6,9,11,22,33,54,44,55,66]
+print(tuple(filter(lambda num :num%2==0,a)))
+print(len(a))
+_________________
+
+ #wap to display  
+fb=['messi','ronaldo','mbappe','neymar']
+print(tuple(filter(lambda name:name.endswith('r') ,fb)))
+print(len(fb))
+__________________
+
+#wap to display  
+fb=['messi','ronaldo','mbappe','neymar']
+print(tuple(filter(lambda nm:len(nm) <6 ,fb)))
+print(len(fb))
+__________________
+
+salary = [2000,3500,6000,10000,5000]
+def change (amt):
+    if amt<5000:
+        return amt+amt*0.2
+    else :
+        return amt+amt*0.1  
+    
+print(tuple(map( change, salary)))
