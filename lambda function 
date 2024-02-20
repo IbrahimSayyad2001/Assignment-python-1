@@ -1,0 +1,23 @@
+#wap to display cube using lambda
+cube= lambda x:x** 3
+print('cube',cube(int(input('Enter number:'))))
+______________________________
+
+ #wap to display 
+check= lambda amt :'vada pav' if amt <50 else 'pizza'
+print(check(int(input('Enter amount:'))) )
+____________________
+
+#wap to display 
+check= lambda num :'+ve number ' if num >0 else '-ve number'
+print(check(int(input('Enter num:'))) )
+__________________
+
+#wap to display count of vowel  
+count_vowels=lambda s:sum(1 for chr in s if chr in 'aeious')
+print(count_vowels('ibrahim_naushad_sayyad'))
+_____________________
+
+#wap to display age category 
+age_cat=lambda age: 'child'if age <= 10 else('Adult'if age<20 else 'senior' )
+print(age_cat(int(input('Enter age:'))))
