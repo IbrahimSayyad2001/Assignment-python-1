@@ -1,0 +1,130 @@
+""""""
+"""
+class director:
+    def contact(selF):
+        print('contact director')
+class principal(director):
+       def admission(selF):
+           print('admission principal ')
+class teacher(principal):
+
+        def leave(selF):
+                        print('teacher permisssion yes/no')
+class student(teacher):
+           pass
+s=student()
+s.leave()
+s.admission()
+-------------------------
+class sp:
+    def call1(self):
+        print('call sharad pawar')
+class  ap (sp):
+    def call2(self):
+        print('call ajit pawar')
+    def call1(self):
+     print('call ap')
+class party(ap):
+    pass
+p=party()
+p.class1()
+-----------------------------------
+class mother:
+    def money(self):
+        print('Money from Mother')
+class father:
+    def car(self):
+         print('Car from Father')
+    def money(self):
+        print('Money from Father')
+-------------------------------------------
+class bikes():
+      def __init__(self,company,model,year_of_manufacture,price):
+          self.company = company
+          self.model = model
+          self.year_of_manufacture = year_of_manufacture
+          self.price = price
+class yamaha (bikes):
+    def spec(self):
+        print('company name',self.company)
+        print('model',self.model)
+        print('year_of_manufacture',self.year_of_manufacture)
+        print(' price of bike',self.price)
+class honda (bikes):
+    def spec(self):
+        print('company name', self.company)
+        print('model', self.model)
+        print('year_of_manufacture', self.year_of_manufacture)
+        print(' price of bike', self.price)
+
+y=yamaha('yamaha','r15',2014,140000)
+y.spec()
+print('------------------'
+h=honda('honda','cbr',2010,150000)
+h.spec()
+------------------------------------------
+class mother:
+    def money(self):
+        print('Money from Mother')
+class father:
+    def car(self):
+         print('Car from Father')
+    super.mother=mother()
+class child(mother,father):
+    pass
+c=child()
+----------------------------------
+
+class sp:
+    def new (self):
+        print('new admission ')
+class  ap (sp):
+    def call2(self):
+        print('call ajit pawar')
+    def new(self):
+     print('new admission  ap')
+class party(ap):
+    pass
+p=party()
+p.new()
+p.new()
+-----------------------------------------------
+class mother:
+    def money(self):
+        print('Money from Mother')
+class father(mother):
+    def money(self):
+         print('FATHERS MONEY')
+         super().money()
+
+    def car(self):
+        print(' fathers car')
+class child(father):
+    pass
+c=child()
+c.money()
+------------------------------------
+class grand_parents:
+    def property(self  ):
+        print('property from grand_parents')
+class mother(grand_parents):
+    def money(self):
+        print('Money from Mother')
+        super().property()
+class father(grand_parents):
+    def money(self):
+         print('FATHERS MONEY')
+
+    def car(self):
+        print(' fathers car')
+class child(mother,father):
+    pass
+c=child()
+c.money()
+c.car()
+c.property()
+c.money()
+
+
+"""
+
