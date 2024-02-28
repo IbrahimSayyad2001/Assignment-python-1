@@ -1,0 +1,60 @@
+from abc import ABC, abstractmethod
+class RBI(ABC):
+    def info(self):
+        print('rbi information')
+    @abstractmethod
+    def security(self):
+        print('rbi security')
+    @abstractmethod
+    def protocol(self):
+        print('rbi protocol')
+
+rb=RBI
+rb.security(ABC)
+rb.protocol(ABC)
+rb.info(ABC)
+class SBI(RBI):
+    def info(self):
+        super().info()
+    def security(self):
+        super().security()
+    def protocol(self):
+        super().protocol()
+sb=SBI()
+sb.protocol()
+sb.security()
+sb.info()
+---------------------------------------------------
+from abc import ABC, abstractmethod
+class CBSC(ABC):
+    @abstractmethod
+    def admission(self):
+        print('CBSC admission')
+    @abstractmethod
+    def fees(self):
+        print('CBSC fees')
+    @abstractmethod
+    def eligibility(self):
+        print('CBSC eligibility')
+class secondary(CBSC):
+      def admission(self):
+          super().admission()
+      def fees(self):
+          super().fees()
+      def eligibility(self):
+          super().eligibility()
+class higher(CBSC):
+     def admission(self):
+        super().admission()
+     def fees(self):
+       super().fees()
+s=secondary()
+s.admission()
+s.fees()
+s.eligibility()
+h=higher()  
+h.admission()
+h.fees()
+h.eligibility()
+"""
+       
