@@ -1,0 +1,25 @@
+""""""
+"""
+# polymorphism
+class dog:
+    def sound(self):
+      print("I am a dog")
+class cat:
+    def sound(self):
+        print("i am cat")
+def soundmake(animaltype):
+    animaltype.sound()
+cs=cat()
+ds=dog()
+soundmake(ds)
+soundmake(cs)
+-------------------------
+class test:
+    def show(self,name,sal,age):
+      print(name,age,sal)
+t=test()
+t.show("cat","dog",34)
+t.show("ibrahim",2000027,22)
+
+
+
