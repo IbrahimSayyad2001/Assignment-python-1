@@ -1,0 +1,230 @@
+""""""
+"""
+#COLLECTION 
+from collections import namedtuple
+values =namedtuple('values','x,y,z')
+v=values(1,12,15)
+print(v)
+print(v.x,v.y,v.z)
+print(v.x+v.y+v.z)
+------------------------------------
+from collections import Counter
+a='aaaaaabbbbbccccc'
+my_counter=Counter(a)
+print(my_counter)
+print(my_counter.most_common(1))
+print(my_counter.values())
+print(my_counter.keys())
+print(my_counter.most_common(1)[0])
+-------------------------------
+from collections import OrderedDict
+od={}
+od['a']=1
+od['b']=2
+od['c']=3
+od['e']=5
+od['f']=6
+print(od)
+
+
+-------------------------------------
+
+from collections import defaultdict
+d=defaultdict(int)#int,flot 
+d['a']=10
+d['b']=20
+print(d['a'],d['b'])
+print(d['b'],d['d'])# found key error as d is not defined 
+---------------------------------------------------------
+
+from collections import deque
+
+d= deque()
+d.append(10)
+d.append(20)
+print(d)
+d.appendleft(30)
+print(d)
+d.popleft()
+print(d)
+d.extendleft([100,200,300])
+print(d)
+d.rotate(1)
+print(d)
+---------------------------------------------
+==========================================
+#ARRAY
+from array import *
+a=array('i',[1,2,3,4,5,6,7,8,9])
+print(a.buffer_info())
+print(a.typecode)
+print(a.itemsize)
+a.reverse()
+print(a)
+a.append(10)
+print(a)
+a.extend(a)
+print(a)
+------------------------------------------
+======================================================
+#DATETIME
+import datetime
+x=datetime.datetime.now()
+y=x.strftime("%B")
+print(x)
+print(y)
+y=x.strftime("%H")
+print(y)
+y=x.strftime("%p")
+print(y)
+y=x.strftime("%M")
+print(y)
+---------------------------------
+===============================================
+#os module
+import os
+print(os.name)
+print(os.path)
+print(os.getcwd())
+print(os.sep)
+cf=os.getcwd()
+for dipath,dirnames,filenames  in os.walk(cf):
+    print(filenames)
+import os
+cd=os.getcwd()
+print(cd)
+cd=os.chdir('data')
+print(cd)
+print(os.stat('ibrahim')
+---------------------
+if not os.path.exists('sayyad'):
+    os.mkdir('sayyad')
+    -------------------------
+os.removedirs('SAYYED')#os.remove removes file inside direc.but removedirs remove dire.
+----------------------------------
+file1=(os.listdir(os.getcwd()))
+file2=(os.listdir('dmart'))
+file3=(os.listdir('flipkart'))
+print(file2)
+print(file3)
+------------------
+os.rmdir('ibrahim')
+-----------------------------
+tutorial =os.getcwd()
+file1='text1.text'
+c=os.path.join(tutorial)
+print(c)
+-------------------------------------------
+=============================================================
+#ramdom module
+import random
+n=random.randint(1,9)
+print(n) #output=7
+n=random.randrange(1,9)
+print(n) #output=8
+a=[10,20,27,30,34]
+b=random.choice(a)
+print(b) #output=27
+r=random.random()
+print(r) #output=0.1727891742427824
+a=[10,20,27,30,34]
+random.shuffle(a)
+print(a) #output=[10, 34, 27, 20, 30]
+
+u=random.uniform(2,5)
+print(u)#output=4.399942694460274
+----------------------------------
+===================================================
+#itertools
+from itertools import count
+def c(start,step):
+    counter=count(start,step)
+    for c in counter:
+         print(c)
+    if c==100:
+        break 
+c(10,5)
+----------------------------------
+from itertools import repeat
+def repet(el,maxrp):
+    repeter=repeat(el,maxrp)
+    for r in repeter:
+        print(r)
+repet('hello ibrahim',3)
+------------------------
+from itertools import cycle
+def cycle_generator(el):
+    i=0
+    c=cycle(el)
+    while i<100:
+        print(next(c),end='')
+        i+=1
+cycle_generator('ibrahim')
+---------------------------------
+from itertools import accumulate
+def accumulate_generator(elements):
+    sum=accumulate(elements)
+    print(list(sum))
+accumulate_generator([1,2,23,34,45,56,67,78])#adding two nos. and after other
+-------------------------------------
+from itertools import accumulate
+def accumulate_generator(elements):
+    r=accumulate(elements)
+    print(list(r))
+accumulate_generator(['i','b','r','a','h','i','m'])#['i', 'ib', 'ibr', 'ibra', 'ibrah', 'ibrahi', 'ibrahim']
+---------------------------------------
+from itertools import chain
+def chain_generator(first,second):
+    c=chain(first,second)
+    print(list(c))
+chain_generator('ibra','him')#['i', 'b', 'r', 'a', 'h', 'i', 'm']
+--------------------------
+from itertools import chain
+def chain_generator(it):
+    c=chain.from_iterable(it)
+    print(list(c))
+chain_generator([['i','b','r'],['h','i','m'],['s','a','y','y','a','d']])
+---------------------------------------------------------------------
+from itertools import pairwise
+def paired_generator(d):
+    p=pairwise(d)
+    print(list(p))
+paired_generator([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18])
+-----------------------------------------------------------------
+from itertools import product
+def product_elm(a,b):
+    p=product(a,b)
+    print(list(p))
+product_elm([1,2,3,4],['i','b','r','a','h','i','m'])
+#[(1, 'i'), (1, 'b'), (1, 'r'), (1, 'a'), (1, 'h'), (1, 'i'), (1, 'm'), (2, 'i'), (2, 'b'), (2, 'r'), (2, 'a'), (2, 'h'), (2, 'i'), (2, 'm'), (3, 'i'), (3, 'b'), (3, 'r'), (3, 'a'), (3, 'h'), (3, 'i'), (3, 'm'), (4, 'i'), (4, 'b'), (4, 'r'), (4, 'a'), (4, 'h'), (4, 'i'), (4, 'm')]
+------------------------------------------------------------------
+from itertools import permutations
+def elm(a,b):
+    p=permutations(a,b)
+    print(list(p))
+elm(['a','b','c','d'],4)
+---------------------------------
+from itertools import combinations
+def el(a,b):
+    c=combinations(a,b)
+    print(list(c))
+el('spam',3)#[('s', 'p', 'a'), ('s', 'p', 'm'), ('s', 'a', 'm'), ('p', 'a', 'm')]
+------------------------------------------------
+==============================================
+#io module
+filename=input("Enter the file name:")
+lines=[]
+print('enter contents of file: and press anytime\'exit\' to write')
+while True:
+    line=input()
+    if line=='exit':
+        break
+    else:
+        lines.append(line+'\n' )
+print(lines)
+file=open(filename,'w')
+file.writelines(lines)
+file.close()
+
+
+"""
